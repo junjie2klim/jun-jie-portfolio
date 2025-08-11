@@ -1,0 +1,75 @@
+@charset "utf-8";
+body, h1, h2, p, div, nav, header, footer, section, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5dc;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Header stays above other content */
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    margin: 0 15px; /* Increased spacing between links */
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f5b942;
+    transition: color 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+/* Button styles */
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 12px 25px; /* Increased padding for larger button */
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;  
+    margin-right: auto;
+    transition: background-color 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 2px solid #ccc;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}

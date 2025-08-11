@@ -1,0 +1,111 @@
+@charset "utf-8";
+@import url('master.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    /*https://www.freepik.com/free-ai-image/2d-graphic-colorful-wallpaper-with-grainy-gradients_94952724.htm#query=red%20and%20white%20background&position=44&from_view=keyword&track=ais_hybrid&uuid=3f8f6301-83a3-4310-a107-4efd25e01cba*/
+    background: url('../images/main-background.jpg') no-repeat center center fixed;
+    background-size: 200% 200%;
+    overflow-x: hidden;
+}
+
+main.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form */
+.wish-form {
+    width: 100%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    color: #000;
+}
+
+.form-control, .form-select {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.form-control::placeholder {
+    color: #fff;
+}
+
+.btn-primary {
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #ddd;
+    color: #000;
+}
+
+/* Submission Feedback */
+.modal-content {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+
+.modal-header, .modal-body, .modal-footer {
+    color: #000;
+}
+
+.btn-close {
+    color: #000;
+}
+
+.is-valid {
+    border-color: green !important;
+}
+
+.is-invalid {
+    border-color: red !important;
+}
+
+.is-invalid + .invalid-feedback {
+    display: block;
+}
+
+.invalid-feedback {
+    color: red;
+    display: none;
+    margin-top: 5px;
+}

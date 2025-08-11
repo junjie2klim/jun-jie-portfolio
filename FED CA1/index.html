@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDG 12 - Responsible Consumption and Production</title>
+    
+    <link rel="stylesheet" href="css/master.css"> <!-- Include the master CSS file -->
+    <link rel="stylesheet" href="css/home.css"> <!-- Include the specific CSS file for this page -->
+</head>
+<body>
+    <header>
+        <div class="logo">JJ</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aspiration.html">Personal Aspirations</a>
+            <a href="about.html">About Me</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="sdg-intro">
+            <h1>12 RESPONSIBLE CONSUMPTION AND PRODUCTION</h1>
+            <p>So... What is SDGs Goal 12?</p>
+            <p>SDGs 12 is a Goal to ensure sustainable consumption and production patterns.</p>
+            <div class="sdg-info">
+                <p>High-income countries have an environmental footprint 10 times larger per person than low-income countries, with fossil fuel subsidies doubling from $375 billion in 2020 to $732 billion in 2021. Additionally, each person wastes an average of 120 kg of food annually.</p>
+                <p>But fret not, from 2019 to 2022, 62 countries and the EU has already introduced 485 sustainable consumption policies, and company sustainability reporting has tripled since 2016.</p>
+            </div>
+            <button onclick="scrollToReducePlastic()">View More</button>
+        </section> 
+        
+        <section class="content-container">
+            <div id="plastic-waste" class="plastic-waste"> <!-- Changed from <section> to <div> -->
+                <h2>Do you know that one of the most significant global waste is plastic?</h2>
+                <p>Base on a report by the United Nations Environment Programme (UNEP), approximately 300 million tons of plastic waste are generated globally each year. Out of this, only about 9% is recycled, 12% is incinerated, and the remaining 79% ends up in landfills, dumps, or the environment.</p>
+                <!--https://unsplash.com/photos/multicolored-abstract-painting-9vcEn3BJyy8-->               
+                <img src="graphics/plastics.jpg" alt="Plastic Waste">
+            </div>
+            
+            <section class="reduce-plastic">
+                <h2>What can we do to help reduce plastic wastage?</h2>
+                <p>Everyone can help create a sustainable future. Choose reusable items over single-use plastics and recycle properly. Support policies reducing plastic production and join clean-up efforts like those by The Ocean Cleanup. Advocate for innovative solutions and support sustainable brands. These actions help achieve SDG Goal 12, leading to a cleaner, healthier environment for all.</p>
+                <!--https://unsplash.com/photos/a-couple-of-people-standing-on-top-of-a-pile-of-trash-IminhMpXoCQ -->
+                <img src="graphics/cleanup.jpg" alt="Ocean Cleanup group in Bali">
+            </section>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Lim Jun Jie</p>
+    </footer>
+
+    <script>
+        function scrollToReducePlastic() {
+            var element = document.getElementById("plastic-waste");
+            var headerOffset = document.querySelector('header').offsetHeight;
+            var elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+            var offsetPosition = elementPosition - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        }
+    </script>
+</body>
+</html>

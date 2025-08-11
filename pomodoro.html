@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pomodoro Timer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+  <div class="container">
+    
+    <!-- 🌙 Theme Toggle Button -->
+    <div class="theme-toggle">
+      <button id="theme-toggle-btn" aria-label="Toggle dark mode">
+        <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun hidden">
+          <circle cx="12" cy="12" r="5" fill="none"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+      </button>
+    </div>
+
+    <h1>Pomodoro Timer</h1>
+
+    <div class="mode-buttons">
+      <button class="mode-btn active" data-mode="work">Pomodoro</button>
+      <button class="mode-btn" data-mode="shortBreak">Short Break</button>
+      <button class="mode-btn" data-mode="longBreak">Long Break</button>
+    </div>
+
+    <div class="status-label" id="status">Work</div>
+
+    <div class="timer-container">
+      <div class="progress-ring-container">
+        <svg class="progress-ring" width="300" height="300">
+          <circle class="progress-ring-circle-bg" cx="150" cy="150" r="120" />
+          <circle class="progress-ring-circle" cx="150" cy="150" r="120" />
+        </svg>
+        <div class="timer" id="timer">25:00</div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="start-btn" class="btn">Start</button>
+      <button id="pause-btn" class="btn" disabled>Pause</button>
+      <button id="reset-btn" class="btn">Reset</button>
+    </div>
+
+    <div class="session-tracker">
+      <div class="session-count">
+        <span>Sessions completed: </span>
+        <div id="tomato-container" class="tomato-container"></div>
+      </div>
+
+      <div class="sound-toggle">
+        <button id="sound-toggle-btn">🔊 Sound On</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script1.js"></script>
+</body>
+</html>

@@ -1,0 +1,316 @@
+:root {
+  --bg-color: #f8f9fa;
+  --text-color: #343a40;
+  --primary-color: #ff6b6b;
+  --secondary-color: #74c0fc;
+  --tertiary-color: #63e6be;
+  --button-hover: #ff8787;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --ring-bg-color: #e9ecef;
+  --work-color: #ff6b6b;
+  --short-break-color: #74c0fc;
+  --long-break-color: #63e6be;
+}
+
+.dark-mode {
+  --bg-color: #212529;
+  --text-color: #f8f9fa;
+  --primary-color: #fa5252;
+  --secondary-color: #4dabf7;
+  --tertiary-color: #38d9a9;
+  --button-hover: #ff8787;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --ring-bg-color: #343a40;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.mode-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.mode-btn {
+  padding: 0.5rem 1.25rem;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--ring-bg-color);
+  color: var(--text-color);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mode-btn:hover {
+  background-color: var(--shadow-color);
+}
+
+.mode-btn.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.status-label {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.timer-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto 2rem;
+}
+
+.progress-ring-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.progress-ring-circle-bg {
+  fill: none;
+  stroke: var(--ring-bg-color);
+  stroke-width: 12;
+}
+
+.progress-ring-circle {
+  fill: none;
+  stroke: var(--primary-color);
+  stroke-width: 12;
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  transition: stroke 0.3s ease;
+}
+
+.timer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+#start-btn {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+#start-btn:hover:not(:disabled) {
+  background-color: var(--button-hover);
+  transform: translateY(-2px);
+}
+
+#pause-btn {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+#pause-btn:hover:not(:disabled) {
+  background-color: #90cdf4;
+  transform: translateY(-2px);
+}
+
+#reset-btn {
+  background-color: var(--tertiary-color);
+  color: white;
+}
+
+#reset-btn:hover:not(:disabled) {
+  background-color: #96f2d7;
+  transform: translateY(-2px);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.session-tracker {
+  margin-top: 1rem;
+}
+
+.session-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tomato-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.tomato {
+  font-size: 1.5rem;
+  animation: popIn 0.3s ease;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.sound-toggle {
+  margin-top: 1rem;
+}
+
+#sound-toggle-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+#sound-toggle-btn:hover {
+  opacity: 0.7;
+}
+
+/* 🌙 Theme Toggle Button Styling */
+.theme-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+}
+
+#theme-toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+  padding: 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+#theme-toggle-btn:hover {
+  background-color: var(--shadow-color);
+}
+
+#theme-toggle-btn svg {
+  width: 24px;
+  height: 24px;
+  fill: none;
+}
+
+
+.hidden {
+  display: none;
+}
+
+/* 📱 Responsive */
+@media (max-width: 600px) {
+  .timer-container {
+    width: 220px;
+    height: 220px;
+  }
+
+  .progress-ring {
+    width: 220px;
+    height: 220px;
+  }
+
+  .progress-ring-circle,
+  .progress-ring-circle-bg {
+    stroke-width: 10;
+    r: 100;
+    cx: 110;
+    cy: 110;
+  }
+
+  .timer {
+    font-size: 2.5rem;
+  }
+
+  .mode-buttons,
+  .controls {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .btn,
+  .mode-btn {
+    width: 100%;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+}

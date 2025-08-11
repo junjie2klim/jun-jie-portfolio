@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="tiktactoe.css">
+</head>
+<body>
+    <div id="name-form">
+        <div class="player-input">
+            <label for="playerX">Player 1 Name:</label>
+            <input type="text" id="playerX" placeholder="Enter name" />
+        </div>
+        <div class="player-input">
+            <label for="playerO">Player 2 Name:</label>
+            <input type="text" id="playerO" placeholder="Enter name" />
+        </div>
+        <button onclick="startGame()">Start Game</button>
+    </div>
+
+    <div id="game-wrapper" class="hidden">
+        <h1>Tic-Tac-Toe</h1>
+        <p id="player-turn"></p>
+        <button id="backButton" onclick="goBack()">Back</button>
+        <div id="result-popup" class="hidden">
+            <div id="result"></div>
+            <button onclick="newGame()">New Game</button>
+            <button onclick="quitGame()">Quit</button>
+        </div>
+        <div id="game-container" class="hidden"> <!-- Initially hidden -->
+            <div class="cell" onclick="handleClick(0)"></div>
+            <div class="cell" onclick="handleClick(1)"></div>
+            <div class="cell" onclick="handleClick(2)"></div>
+            <div class="cell" onclick="handleClick(3)"></div>
+            <div class="cell" onclick="handleClick(4)"></div>
+            <div class="cell" onclick="handleClick(5)"></div>
+            <div class="cell" onclick="handleClick(6)"></div>
+            <div class="cell" onclick="handleClick(7)"></div>
+            <div class="cell" onclick="handleClick(8)"></div>
+        </div>
+    </div>
+    <script src="tiktactoe.js"></script>
+</body>
+</html>

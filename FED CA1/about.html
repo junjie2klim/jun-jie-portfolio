@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="css/master.css"> 
+    <link rel="stylesheet" href="css/about.css"> 
+</head>
+<body>
+    <header>
+        <div class="logo">JJ</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aspiration.html">Personal Aspirations</a>
+            <a href="about.html">About Me</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="about-me">
+            <h1>About me</h1>
+            <p>Hi, I'm Jun Jie. I have a knack for making things more complicated than they need to be, enduring the struggle just for the thrill of it. But hey, everything always miraculously works out in the end!</p>
+            <button onclick="scrollToValues()">View More</button>
+        </section>
+        
+        <section id="values" class="values">
+            <h2>Values</h2>
+            <div class="values-grid"> <!-- Changed from <section> to <div> -->
+                <div class="value-card"> <!-- Changed from <section> to <div> -->
+                    <div class="front"> <!-- Changed from <section> to <div> -->
+                        <h3>Loyalty</h3>
+                    </div>
+                    <div class="back"> <!-- Changed from <section> to <div> -->
+                        <p>I believe loyalty creates a sense of security and mutual respect in standing by those who are important to me through thick and thin, supporting them and staying committed, no matter the circumstances.</p>
+                    </div>
+                </div>
+                <div class="value-card"> <!-- Changed from <section> to <div> -->
+                    <div class="front"> <!-- Changed from <section> to <div> -->
+                        <h3>Freedom</h3>
+                    </div>
+                    <div class="back"> <!-- Changed from <section> to <div> -->
+                        <p>Freedom is a vital value to me as it lets me grow and be myself. Following my curiosity and trying new things, and speaking my mind without holding back; I believe that it can make life more meaningful.</p>
+                    </div>
+                </div>
+                <div class="value-card"> <!-- Changed from <section> to <div> -->
+                    <div class="front"> <!-- Changed from <section> to <div> -->
+                        <h3>Transparency</h3>
+                    </div>
+                    <div class="back"> <!-- Changed from <section> to <div> -->
+                        <p>This value resonates with my belief in the importance of honesty and openness, which builds trust and understanding. Being transparent supports improves decision-making, and makes my relationships more genuine.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="interests">
+            <h2>Interests</h2>
+            <div class="interests-grid"> <!-- Changed from <section> to <div> -->
+                <article>
+                    <h3>Fishing</h3>
+                    <img src="graphics/catfish.JPG" alt="Fishing">
+                </article>
+                <article>
+                    <h3>Gachapon</h3>
+                    <img src="graphics/gacha.jpg" alt="Gachapon">
+                </article>
+                <article>
+                    <h3>Traveling</h3>
+                    <img src="graphics/Japan.jpg" alt="Traveling">
+                </article>
+            </div>
+        </section>
+        
+        <section class="personality">
+            <h2>Personality</h2>
+            <div class="personality-content"> <!-- Changed from <section> to <div> -->
+                <h3>Virtuoso (ISTP-T)</h3>
+                <p>As an ISTP, I'm a straightforward and practical person who values getting straight to the point. I'm also adaptable, thrive in hands-on situations, and easily solve problems.
+                    While I can socialize well, I often prefer to recharge independently, valuing my independence and physical comfort.
+                </p>
+                <!--new window after clicking-->
+                <a href="https://www.16personalities.com/istp-personality" target="_blank">
+                    <img src="graphics/istp.webp" alt="16 Personalities">
+                    <img src="graphics/traits.jpg" alt="Traits">
+                </a>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Lim Jun Jie</p>
+    </footer>
+
+    <script>
+        function scrollToValues() {
+            var element = document.getElementById("values");
+            var headerOffset = document.querySelector('header').offsetHeight;
+            var elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+            var offsetPosition = elementPosition - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+@import url('master.css');
+
+main {
+    padding: 80px 20px 20px; 
+}
+
+/* SDG intro section */
+.sdg-intro {
+    background: linear-gradient(to bottom, #ffd194, #fff716);
+    color: #000000;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
+    padding: 40px; 
+    border-radius: 10px; 
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 255); 
+}
+
+.sdg-intro h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.sdg-intro p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.sdg-info {
+    background-color: #f5b942;
+    padding: 20px; 
+    border-radius: 8px;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.sdg-info p {
+    margin-bottom: 10px;
+}
+
+
+
+/* Flex container for the sections */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+}
+
+/* Section styles for plastic waste */
+.plastic-waste {
+    background: linear-gradient(to bottom, #ffd194, #70e1f5);
+    padding: 25px; 
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 50%; 
+}
+
+.plastic-waste h2 {
+    font-size: 26px;
+    margin-bottom: 15px; 
+}
+
+.plastic-waste p {
+    margin-bottom: 15px; 
+}
+
+.plastic-waste img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* Section styles for reduce plastic */
+.reduce-plastic {
+    background: linear-gradient(to bottom, #ffd194, #70e1f5);
+    padding: 25px; 
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 50%; 
+}
+
+.reduce-plastic h2 {
+    font-size: 26px;
+    margin-bottom: 15px; 
+}
+
+.reduce-plastic p {
+    margin-bottom: 30px; 
+}
+
+.reduce-plastic img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

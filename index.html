@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jun Jie — Developer Portfolio</title>
+  <meta name="description" content="Jun Jie — clean, modern developer portfolio" />
+  <meta name="theme-color" content="#0b1022" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- ====== Header ====== -->
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="#top">Jun Jie</a>
+      <button class="hamburger" aria-expanded="false" aria-controls="drawer" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="btn btn-primary" href="#contact">Hire Me</a></li>
+      </ul>
+    </div>
+    <aside id="drawer" class="drawer" hidden>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="btn btn-primary" href="#contact">Hire Me</a></li>
+      </ul>
+    </aside>
+  </header>
+  <main id="home">
+    <!-- ====== Hero ====== -->
+    <section class="section hero">
+      <div class="blobs" aria-hidden="true">
+        <div class="blob b1"></div>
+        <div class="blob b2"></div>
+        <div class="blob b3"></div>
+      </div>
+      <div class="container">
+        <h1><span class="gradient">Hi, I'm Jun Jie — Web Developer</span></h1>
+        <p class="muted">I develop web projects using HTML, CSS, JavaScript, Photoshop with a focus on UI/UX principles.</p>
+        <p style="margin-top:1rem">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+        </p>
+      </div>
+    </section>
+    <!-- ====== About ====== -->
+    <section id="about" class="section">
+      <div class="container about-grid grid">
+        <div>
+          <!-- Add your photo: replace the div below with <img class="avatar" src="assets/me.jpg" alt="Jun Jie portrait" /> -->
+          <div class="avatar"><img src="./image/Jun Jie2.png" alt="Jun Jie portrait" class="avatar-img" /></div>
+        </div>
+        <div>
+          <h2 style="font-weight:800; font-size:clamp(1.4rem,3vw,2rem)">About Me</h2>
+          <p class="muted" style="margin-top:.5rem">I'm passionate about web design and like styling websites with CSS. I enjoy combining
+             Photoshop designs with UI/UX principles to create visually appealing and user-friendly experiences.</p>
+          <div class="skills">
+            <div class="chip">HTML</div>
+            <div class="chip">CSS</div>
+            <div class="chip">JavaScript</div>
+            <div class="chip">Photoshop</div>
+            <div class="chip">UI/UX</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Skills & Expertise ====== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 style="font-weight:800; font-size:clamp(1.4rem,3vw,2rem); margin-bottom:1rem; text-align:center">Skills & Expertise</h2>
+        <p class="muted" style="text-align:center; margin-bottom:2rem">A diverse skill set spanning web development, system administration, and soft skills.</p>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <div class="skill-category-header">
+              <div class="skill-icon technical">&lt;/&gt;</div>
+              <h3>Technical Skills</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag blue">HTML5</span>
+              <span class="skill-tag blue">CSS3</span>
+              <span class="skill-tag blue">JavaScript</span>
+              <span class="skill-tag blue">MySQL</span>
+              <span class="skill-tag blue">UI/UX</span>
+              <span class="skill-tag blue">Adobe Photoshop</span>
+              <span class="skill-tag blue">Git & Source Control</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <div class="skill-category-header">
+              <div class="skill-icon soft">✓</div>
+              <h3>Soft Skills</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag green">Teamwork</span>
+              <span class="skill-tag green">Flexibility</span>
+              <span class="skill-tag green">Adaptability</span>
+              <span class="skill-tag green">Time Management</span>
+              <span class="skill-tag green">Critical Thinking</span>
+              
+              
+            </div>
+          </div>
+          <div class="skill-category">
+            <div class="skill-category-header">
+              <div class="skill-icon specialized">⚡</div>
+              <h3>Specialized Skills</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag purple">CCTV Installation</span>
+              <span class="skill-tag purple">Access Control Systems</span>
+              <span class="skill-tag purple">Structured Cabling</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Experience & Education ====== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 style="font-weight:800; font-size:clamp(1.4rem,3vw,2rem); margin-bottom:1rem; text-align:center">Experience & Education</h2>
+        <p class="muted" style="text-align:center; margin-bottom:2rem">My professional journey and educational background.</p>
+        <div class="experience-grid">
+          <div class="experience-section">
+            <h3 class="experience-title">
+              <svg class="experience-icon" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6a2 2 0 01-2 2H8a2 2 0 01-2-2V8a2 2 0 012-2V6"></path>
+              </svg>
+              Work Experience
+            </h3>
+            <div class="experience-items">
+              <div class="experience-item work">
+                <h4>National Service</h4>
+                <p class="company">Ministry of Defence</p>
+                <p class="period">2021–2023</p>
+                <p class="description muted">Learned discipline, adaptability, and teamwork in a structured environment.</p>
+              </div>
+              <div class="experience-item work">
+                <h4>F&B Attendant</h4>
+                <p class="company">PARKROYAL COLLECTION Pickering</p>
+                <p class="period">2018</p>
+                <p class="description muted">Developed communication, professionalism, and problem-solving in a fast-paced service setting.</p>
+              </div>
+              <div class="experience-item work">
+                <h4>Internship</h4>
+                <p class="company">OES Technology Ltd</p>
+                <p class="period">2018</p>
+                <p class="description muted">Assisted in full-scale CCTV installations, access control system setups, and system troubleshooting for residential & commercial sites.</p>
+              </div>
+            </div>
+          </div>
+          <div class="experience-section">
+            <h3 class="experience-title">
+              <svg class="experience-icon" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+              </svg>
+              Education
+            </h3>
+            <div class="experience-items">
+              <div class="experience-item education">
+                <h4>Diploma in Information Technology</h4>
+                <p class="company">Singapore Polytechnic</p>
+                <p class="period">2024–2027</p>
+                <p class="description muted">Focus on web development, UI design, and databases.</p>
+              </div>
+              <div class="experience-item education">
+                <h4>Security Technology</h4>
+                <p class="company">Institute of Technical Education</p>
+                <p class="period">2017–2018</p>
+                <p class="description muted">Learned hardware installation, troubleshooting, and system integration.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Co-Curricular Activities ====== -->
+    <section class="section">
+      <div class="container">
+        <h2 style="font-weight:800; font-size:clamp(1.4rem,3vw,2rem); margin-bottom:1rem; text-align:center">Co-Curricular Activities</h2>
+        <p class="muted" style="text-align:center; margin-bottom:2rem">Beyond academics and work, I engage in activities that develop focus and strategic thinking.</p>
+        <div class="activities-container">
+          <div class="activity-card">
+            <div class="activity-header">
+              <div class="activity-icon">
+                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <h3>Darts Club</h3>
+            </div>
+            <p class="muted">Actively participating in training sessions and friendly competitions, developing focus, precision, and strategic thinking through the sport of darts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Projects ====== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div style="display:flex; align-items:end; justify-content:space-between; gap:1rem; margin-bottom:1rem;">
+          <h2 style="font-weight:800; font-size:clamp(1.4rem,3vw,2rem)">Projects</h2>
+        </div>
+        <div class="cards">
+          <!-- Card 1 -->
+          <article class="card">
+            <img class="media" src="./image/FirstWeb.jpg" alt="First Website" loading="lazy" />
+            <div class="body">
+              <h3>First Website</h3>
+              <p class="muted">The start of everything</p>
+              <div class="tags">
+               <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JAVASCRIPT</span>
+              </div>
+              <p><a class="btn" href="./FED CA1/index.html" target="_blank" rel="noopener noreferrer">View</a></p> 
+            </div>
+          </article>
+          <!-- Card 2 -->
+          <article class="card">
+            <img class="media" src="./image/SP Mock Web.jpg" alt="SP Website" loading="lazy" />
+            <div class="body">
+              <h3>Singapore Poly 70th anniversary</h3>
+              <p class="muted">Heritage site for SP's 70th anniversary</p>
+              <div class="tags">
+                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JAVASCRIPT</span>
+              </div>
+              <p><a class="btn" href="FED CA2/html/index.html" target="_blank" rel="noopener noreferrer">View</a></p>
+            </div>
+          </article>
+            <!-- Card 3 -->
+                    <article class="card">
+            <img class="media" src="./image/tiktactoe.jpg" alt="Tik-Tac-Toe" loading="lazy" />
+            <div class="body">
+              <h3>Tic Tac Toe</h3>
+              <p class="muted">A simple tic-tac-toe game I made for fun</p>
+              <div class="tags">
+                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JAVASCRIPT</span>
+              </div>
+              <p><a class="btn" href="Tic-Tac-Toe/tiktactoe.html" target="_blank" rel="noopener noreferrer">View</a></p>
+            </div>
+          </article>
+          <!-- Card 4 -->
+                    <article class="card">
+            <img class="media" src="./image/Pomodoro.jpg" alt="Pomodoro" loading="lazy" />
+            <div class="body">
+              <h3>Pomodoro Timer</h3>
+              <p class="muted">Dark‑mode timer with sound alerts, session icons, and theme toggle</p>
+              <div class="tags">
+                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JAVASCRIPT</span>
+              </div>
+              <p><a class="btn" href="pomodoro.html" target="_blank" rel="noopener noreferrer">View</a></p>
+            </div>
+          </article>
+          <!-- Card 5 -->
+          <article class="card">
+            <img class="media" src="./image/BugTrackr.jpg" alt="BugTrackr" loading="lazy" />
+            <div class="body">
+              <h3>BugTrackr</h3>
+              <p class="muted">A gamified bug bounty system with quests, badges and JWT auth</p>
+              <div class="tags">
+                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JAVASCRIPT</span><span class="tag">MySQL</span>
+              </div>
+              <p><a class="btn" href="https://bugtrackr-23w0.onrender.com/" target="_blank" rel="noopener noreferrer">View</a></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Contact ====== -->
+    <section id="contact" class="section contact">
+      <div class="container grid" style="gap:1.25rem; align-items:start; grid-template-columns: 1fr;">
+        <div>
+          <h2 style="font-weight:800; font-size:clamp(1.4rem,3vw,2rem)">Let's build something</h2>
+          <p class="muted">Send a message and I'll reply soon.</p>
+        </div>
+        <form id="contact-form" class="form" novalidate>
+          <div class="row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send</button>
+          <p id="status" class="muted" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="container footer">
+    <div class="footer-socials">
+      <a href="https://github.com/junjie2klim" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/in/limjunjie-2k" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+        </svg>
+      </a>
+      <a href="https://instagram.com/jj_llim" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+        </svg>
+      </a>
+    </div>
+    <p>© <span id="year"></span> Jun Jie. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

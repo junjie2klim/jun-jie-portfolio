@@ -1,0 +1,131 @@
+@charset "utf-8";
+@import url('master.css');
+
+body {
+    /*https://www.freepik.com/free-ai-image/2d-graphic-colorful-wallpaper-with-grainy-gradients_94952724.htm#query=red%20and%20white%20background&position=44&from_view=keyword&track=ais_hybrid&uuid=3f8f6301-83a3-4310-a107-4efd25e01cba*/
+    background: url('../images/main-background.jpg') no-repeat center center fixed;
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #d90429;
+}
+
+.btn-spacing {
+    margin-top: 60px;
+}
+
+/*Image zoom*/
+.img-hover-zoom {
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.img-hover-zoom:hover {
+    transform: scale(1.05);
+}
+
+.modal-content {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.arrow-down {
+    display: block;
+    font-size: 2em;
+    color: #000000;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    animation: bounce 2s infinite;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.arrow-down:hover {
+    color: #ff0000;
+}
+
+
+.more-link {
+    text-decoration: underline;
+    color: #007bff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+.more-link:hover {
+    color: #0056b3;
+}
+
+
+/*SP Open House Section*/
+#spOpenHouse .row, #spMusicFestival .row {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#spOpenHouse .col-md-5 img, #spMusicFestival  {
+    max-width: 100%;
+    height: auto;
+    margin-left:100px ;
+    margin-bottom: 10px;
+}
+.col-md-6 img {
+    margin-left:130px ;
+}
+
+#spOpenHouse .text-center, #spMusicFestival .text-center {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+/*Achievements Section*/
+.achievements {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+.achievements .achievement-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.achievements h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.achievements .row {
+    justify-content: space-between;
+}
+
+.achievements .col-md-4 {
+    flex: 0 0 30%;
+    margin: 10px;
+    background-color: #d90429;
+}
+
+.achievements {
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
